@@ -1,0 +1,12 @@
+#ifndef LIBQT5FTP_GLOBAL_H
+#define LIBQT5FTP_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LIBQT5FTP_LIBRARY)
+#  define LIBQT5FTPSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define LIBQT5FTPSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // LIBQT5FTP_GLOBAL_H
